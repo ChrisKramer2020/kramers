@@ -10,5 +10,38 @@ html {
 body {
   @include font-smoothing(on);
   margin: 0;
+  background-color: rgb(86, 98, 85);
   font: $base-text-size / 1 $base-font-family;
 }
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+#navbar {
+  flex-direction: row;
+  display: flex;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+video#fullscreen {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: -100;
+    background: transparent url(../images/TheMountain.mp4) no-repeat;
+    background-size: contain;
+  }

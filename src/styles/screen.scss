@@ -10,38 +10,69 @@ html {
 body {
   @include font-smoothing(on);
   margin: 0;
-  background-color: rgb(86, 98, 85);
   font: $base-text-size / 1 $base-font-family;
 }
 
 h2 {
   font-family: 'Great Vibes', cursive;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   font-weight: 700;
   font-size: 40px;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
-#navbar {
-  flex-direction: row;
-  display: flex;
-
-}
+// #navbar {
+//   flex-direction: row;
+//   display: flex;
+//
+// }
 
 li {
   list-style-type: none;
+  color: rgb(255,255,255);
+  font-size: 56px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+    &:hover {
+      color: rgba(255,255,355,0.8);
+  }
 }
 
-video#fullscreen {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    min-width: 100%;
-    height: auto;
-    min-height: 100%;
-    z-index: -100;
-    background: transparent url(../images/TheMountain.mp4) no-repeat;
-    background-size: contain;
-  }
+#page-wrap {
+
+}
+
+#toggle {
+  position:(fixed,20px,0,0,-190px);
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  z-index: 1;
+}
+
+#page-content {
+  position: relative;
+  z-index: 0;
+}
+
+#sidebar {
+  position: fixed;
+  width: 120px;
+  padding: 30px;
+  background: #333;
+  z-index: 0;
+}
+
+#sidebartoggler {
+  display: none;
+    &:checked + #page-wrap {
+      #sidebar {
+        left: 0px;
+      }
+    #toggle {
+      left: 200px;
+    }  
+    }
+}

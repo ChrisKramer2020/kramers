@@ -16,8 +16,26 @@ body {
 h2 {
   font-family: 'Great Vibes', cursive;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 25px;
   font-weight: 700;
-  font-size: 40px;
+  padding: 8px;
+  font-size: 60px;
   color: black;
+}
+
+#nav-item {
+  list-style-type: none;
+  color: black;
+}
+
+#nav-bar {
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: row;
+  display: inline-block;
+  padding: 18px;
+  position: relative;
+  top: -45px;
+  font-size: 28px;
+  position: relative;
 }

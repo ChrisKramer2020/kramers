@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import videoURL from 'video/swatch.mp4'
+// import videoURL from '/video/swatch.mp4'
 class App extends Component {
 
   constructor () {

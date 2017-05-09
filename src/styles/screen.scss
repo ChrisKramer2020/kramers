@@ -21,6 +21,10 @@ body {
   text-align: center;
 }
 
+#pulse {
+  font-size: 28px;
+}
+
 #image {
   align-items: center;
   align-content: center;
@@ -40,6 +44,11 @@ body {
   background-color: black;
   padding: 30px;
   position: relative;
+  height: 400px;
+  flex-direction: column;
+  display: flex;
+  z-index: -1;
+  flex: 1;
   top: 800px;
   overflow: visible;
 }
@@ -85,7 +94,44 @@ header {
   height: 50px;
   z-index: 1;
   list-style-type: none;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 2px solid #EEE;
+  margin-bottom: 200px;
+}
+
+#titles {
+  align-items: center;
+  align-content: center;
+  position: relative;
+  bottom: 100px;
+  font-size: 35px;
+  font-family: 'Arvo', serif;
+
+}
+
+#about {
+  font-family: 'Arvo', serif;
+  font-size: 35px;
+  position: relative;
+  top: 625px;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+}
+
+#secondImage {
+  position: relative;
+    @media screen and (max-width: 360px) {
+      position: relative;
+      top: 750px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      flex: 1;
+      margin-bottom: 250px;
+    }
 }
 
 // font-family: 'Scope One', serif;
@@ -125,6 +171,16 @@ nav {
       border-bottom: 1px solid #fff;
       color: #F0EADC;
     }
+
+    @media screen and (max-width: 360px) {
+      // width: 360px;
+      flex: 1;
+      position: relative;
+      left: -260px;
+      flex-direction: column;
+      display: flex;
+      }
+
 }
 
 nav li:last-child a {
@@ -146,6 +202,13 @@ nav a :hover {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
+    @media screen and (max-width: 360px) {
+      // width: 360px;
+      flex: 1;
+      flex-direction: column;
+
+      display: flex;
+    }
 
 }
 
@@ -167,7 +230,6 @@ nav a :hover {
   display: none;
   z-index: 1;
   position: absolute;
-
 }
 
 #menuToggle:checked ~ .menu {
@@ -182,6 +244,12 @@ nav a :hover {
       color: rgb(66,99,129);
       text-decoration: none;
     }
+  @media screen and (max-width: 360px) {
+    width: 100%;
+    height: 60%;
+    font-family: 'Cutive', serif;
+
+  }
 }
 
 #aLink:checked ~ .menu {
@@ -201,22 +269,55 @@ nav a :hover {
   position: absolute;
   right: 0;
   z-index: -1;
+    @media screen and (max-width: 480px),(max-width: 414px) {
+      flex: 1;
+      flex-direction: column;
+      width: 412px;
+      display: flex;
+        @media screen and (width: 320px) {
+          width: 320px;
+          flex: 1;
+          flex-direction: column;
+          display: flex;
+        }
+        @media screen and (width: 360px) {
+          width: 360px;
+          flex: 1;
+          flex-direction: column;
+          display: flex;
+        }
+    }
+
 }
 
 form {
   align-items: center;
   align-content: center;
-  vertical-align: middle;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  top: 150px;
+  left: -70px;
+  float: right;
   position: relative;
-  bottom: 250px;
   textarea {
     align-items: center;
     align-content: center;
     vertical-align: middle;
     position: relative;
-    bottom: 250px;
-    z-index: 3;
+    z-index: -2;
   }
+    @media screen and (max-width: 360px) {
+      float: right;
+      position: relative;
+      left: 90px;
+    }
+}
+
+#F {
+  color: #fff;
+  font-size: 40px;
+  margin-top: -10px;
 }
 
 #aLink {
@@ -225,4 +326,12 @@ form {
 
 #content {
   z-index: 9999;
+}
+
+ul#fList {
+  color: #fff;
+  justify-content: space-between;
+  float: left;
+  font-size: 18px;
+
 }

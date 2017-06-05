@@ -46,6 +46,75 @@ body {
   margin-bottom: 25px;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.snip1580 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.snip1580 * {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1580 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1580 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.snip1580 h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 3px 0;
+}
+.snip1580 h5 {
+  font-weight: 400;
+  margin: 0;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+.snip1580 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.snip1580:hover figcaption,
+.snip1580.hover figcaption {
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #fff;
+}
+.snip1580:hover h3,
+.snip1580.hover h3,
+.snip1580:hover h5,
+.snip1580.hover h5 {
+  color: #333;
+}
+
 #cars {
   position: relative;
   flex: 1;
@@ -56,11 +125,14 @@ body {
   margin-right: 50px;
   margin-bottom: 60px;
   margin-top: 50px;
-
+  pointer-events: none;
+    :hover {
+      background-color: #fff;
+    }
     #brands {
       box-shadow: 0 0 10px 0 #000;
         :hover {
-          
+          background-color: #fff;
         }
     }
 }
@@ -106,6 +178,7 @@ header {
   list-style-type: none;
   border-bottom: 2px solid #EEE;
   margin-bottom: 200px;
+  margin-top: 10px;
 }
 
 #titles {
